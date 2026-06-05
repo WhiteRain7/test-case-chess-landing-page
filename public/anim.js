@@ -16,24 +16,27 @@ function animateImages () {
     let img2 = document.getElementById('block-2__img')
     let img3 = document.getElementById('block-3__img')
 
+    let img2Observed = img2.parentElement
+    let img3Observed = document.getElementById('block-3__list')
+
     let observer = new IntersectionObserver((entries) => {
         for (let i = 0; i < entries.length; i++) {
             if (entries[i].isIntersecting) {
-                if (entries[i].target === img2.parentElement) {
+                if (entries[i].target === img2Observed) {
                     img2.querySelector('#block-2__img__palm').style.animationName = 'palm-hitting'
                     img2.querySelector('#block-2__img__hit').style.animationName = 'figure-hit-effect'
                     img2.querySelector('#block-2__img__figure').style.animationName = 'figure-harmed'
                 }
 
-                if (entries[i].target === img3.parentElement) {
+                if (entries[i].target === img3Observed) {
                     img3.style.animationName = 'plane'
                 }
             }
         }
     })
 
-    observer.observe(img2.parentElement)
-    observer.observe(img3.parentElement)
+    observer.observe(img2Observed)
+    observer.observe(img3Observed)
 }
 
 
