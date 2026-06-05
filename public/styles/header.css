@@ -267,8 +267,9 @@
     }
 
     #header-content {
-        width      : 335px;
-        margin     : auto;
+        width     : 100%;
+        max-width : 335px;
+        margin    : auto;
     }
 
     #header__wrap__wrapped {
