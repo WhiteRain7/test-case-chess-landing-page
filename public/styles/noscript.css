@@ -1,0 +1,33 @@
+#block-2__img__palm {
+    animation-name: palm-hitting;
+}
+
+#block-2__img__figure {
+    animation-name: figure-harmed;
+}
+
+#block-2__img__hit {
+    animation-name: figure-hit-effect;
+}
+
+#block-3__img {
+    animation-name: plane;
+}
+
+.block__controls {
+    display: none !important;
+}
+
+#block-4__cards__wrap {
+    width            : 100%;
+    overflow         : auto;
+    scroll-snap-type : x mandatory;
+}
+
+.person-card {
+    scroll-snap-align: center;
+}
+
+#block-3__list::-webkit-scrollbar {
+    display: initial !important;
+}
