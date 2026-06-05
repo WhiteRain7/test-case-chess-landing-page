@@ -614,20 +614,27 @@ s {
 
     .block__table,
     .block__table tbody,
-    .block__table tr,
-    .block__table th,
-    .block__table td {
+    .block__table tr {
         display : block;
         padding : 0;
     }
 
+    .block__table th,
+    .block__table td {
+        display : inline-block;
+        width   : auto;
+        padding : 0;
+    }
+
     .block__table tr {
-        padding : 12px 0;
+        display   : flex;
+        flex-flow : row wrap;
+        gap       : 16px 12px;
+        padding   : 12px 0;
     }
 
     .block__table th {
-        border-right  : none;
-        margin-bottom : 16px;
+        border-right : none;
     }
 
     .block__subtitle {
