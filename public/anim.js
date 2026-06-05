@@ -46,6 +46,12 @@ function animateSteps () {
     let b4Container = b4Back.ariaControlsElements[0]
     let elWidth = b4Container.children[0].offsetWidth
 
+    for (let i = 0; i < b4Out.children.length; ++ i) {
+        b4Out.children[i].addEventListener('click', event => {
+            b4Container.scrollTo({ left: elWidth * i, behavior: 'smooth' })
+        })
+    }
+
     function reviewButtons (left = 0) {
         let current = Math.round(left / elWidth)
         let length = Math.round((b4Container.scrollWidth - b4.offsetWidth) / elWidth)
