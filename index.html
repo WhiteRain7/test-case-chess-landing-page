@@ -12,11 +12,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 
-    <script fetchpriority="low" src="public/anim.js" type="application/javascript"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:opsz,wght@18..144,300..900&display=swap&text=0123456789.!?,:;—-+=_«»АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяIVX" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <script async fetchpriority="low" src="public/anim.js" type="application/javascript"></script>
 
     <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:opsz,wght@18..144,300..900&display=swap&text=0123456789.!?,:;—-+=_«»АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяIVX" rel="stylesheet">
         <link rel="stylesheet" href="public/styles/noscript.css" />
     </noscript>
 </head>
@@ -48,14 +50,14 @@
         </div>
 
         <div id="header-bg" aria-hidden="true">
-            <img id="header-bg-stamp" src="public/images/stamp.webp" alt="" />
-            <img id="header-bg-circle" src="public/images/main-circle.webp" alt="" />
+            <img fetchpriority="high" id="header-bg-stamp" src="public/images/stamp.webp" alt="" />
+            <img fetchpriority="high" id="header-bg-circle" src="public/images/main-circle.webp" alt="" />
 
             <img id="header-bg-king" src="public/images/main-king.webp" alt="" />
             <img id="header-bg-queen" src="public/images/main-queen.webp" alt="" />
 
-            <img id="header-bg-img" class="img--burn" src="public/images/main-background.webp" alt="" />
-            <img id="header-bg-city" src="public/images/main-city.webp" alt="" />
+            <img fetchpriority="high" id="header-bg-img" class="img--burn" src="public/images/main-background.webp" alt="" />
+            <img fetchpriority="high" id="header-bg-city" src="public/images/main-city.webp" alt="" />
 
             <img id="header-bg-knight" src="public/images/main-knight.webp" alt="" />
             <img id="header-bg-pawn" src="public/images/main-pawn.webp" alt="" />
